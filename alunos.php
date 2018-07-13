@@ -168,7 +168,7 @@
 			<td></td>
 			<form method="post">
 				<td><input type="text" name="nome" required="required" size="40" style="font-weight:bold"></td>
-				<td><input type="date" name="data_nascimento" required="required" value="<?php date_default_timezone_set('UTC'); echo date('Y-d-m'); ?>"></td>
+				<td><input type="date" name="data_nascimento" required="required" value="<?php date_default_timezone_set('UTC'); echo date('Y-m-d'); ?>"></td>
 				<td><select name="id_curso" onchange="ChangeSelectedByNameOptionByValue('id_professor', this.value)"><?php echo $select_cursos; ?></select></td>
 				<td><select name="id_professor" disabled><?php echo $select_professores; ?></select></td>
 				<td><input type="number" name="numero" required="required" style="font-weight:bold"></td>
